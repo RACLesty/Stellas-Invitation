@@ -6,13 +6,13 @@ body {
   background-image: url('../assets/plimplimcumple.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center ;
+  background-size: contain;
 }
 
 .birthdayCard {
   position: relative;
-  width: 450px;
-  height: 550px;
+  width: 250px;
+  height: 350px;
   cursor: pointer;
   transform-style: preserve-3d;
   transform: perspective(2500px);
@@ -38,8 +38,8 @@ body {
 .cardFront {
   position: relative;
   background-color: #fff;
-  width: 450px;
-  height: 550px;
+  width: 250px;
+  height: 350px;
   overflow: hidden;
   transform-origin: left;
   box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
@@ -52,7 +52,7 @@ body {
 
 .happy {
  font-family: "Brush Script MT", cursive;
- font-size: 50px;
+ font-size: 25px;
  color: rgb(136, 0, 255);
   text-align: center;
   margin: 30px;
@@ -68,8 +68,8 @@ body {
 .balloon-3,
 .balloon-4 {
   position: absolute;
-  width: 85px;
-  height: 95px;
+  width: 65px;
+  height: 75px;
   border-radius: 50%;
 }
 
@@ -104,10 +104,10 @@ body {
   content: "";
   position: absolute;
   width: 1px;
-  height: 155px;
+  height: 125px;
   background-color: #ffc848;
-  top: 95px;
-  left: 43px;
+  top: 75px;
+  left: 33px;
 }
 
 .balloon-1::after,
@@ -118,8 +118,8 @@ body {
   position: absolute;
   border-right: 7px solid transparent;
   border-left: 7px solid transparent;
-  top: 94px;
-  left: 37px;
+  top: 74px;
+  left: 27px;
 }
 
 .balloon-1::after {
@@ -141,8 +141,8 @@ body {
 .cardInside {
   position: absolute;
   background-color: #fff;
-  width: 450px;
-  height: 550px;
+  width: 250px;
+  height: 350px;
   z-index: -1;
   left: 0;
   top: 0;
@@ -151,10 +151,16 @@ body {
   background-image: linear-gradient(120deg, #ffffff 0%, #f1b4db 80%);
 }
 
+h3 {
+
+  font-size: 10px;
+}
+
 p {
   margin: 60px;
   color: #333;
   color: rgb(136, 0, 255);
+  font-size: 8px;
 }
 
 .name {
@@ -174,12 +180,13 @@ p {
   color: rgb(136, 0, 255);
 }
 
+
 .stella-image {
   position: absolute;
-  top: 175px; /* Adjust the positioning as needed */
+  top: 125px; /* Adjust the positioning as needed */
   left: 77%;
   transform: translateX(-50%);
-  width: 250px; /* Adjust the size as needed */
+  width: 140px; /* Adjust the size as needed */
   height: auto;
   z-index: 1; /* Ensures the image is in front of other elements */
 }
