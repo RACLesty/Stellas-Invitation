@@ -5,6 +5,7 @@ body {
   height: 100vh;
   background-image: url('../assets/plimplimcumple.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center ;
 }
 
@@ -181,4 +182,16 @@ p {
   width: 250px; /* Adjust the size as needed */
   height: auto;
   z-index: 1; /* Ensures the image is in front of other elements */
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: 80%; /* Adjusts the size for tablets and smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: 100%; /* Adjusts the size for mobile phones */
+  }
 }
